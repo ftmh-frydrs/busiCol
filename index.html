@@ -21,12 +21,12 @@
 
 <body>
 
-    <div class="bg-img bg-no-repeat bg-cover bg-center">
-       <div class=" text-white p-3 lg:grid lg:grid-cols-3 lg:bg-header hidden">
+    <div class="before:bg-[url('./content/img/2.png')] w-[100%] before:w-[100%] h-auto before:h-[100vh]   before:bg-cover before:bg-center before:brightness-50 before:absolute before:content-[''] before:bg-cover z z-50 before:bg-no-repeat bg-no-repeat before:bg-cover before:bg-center">
+       <div class=" text-white p-3 lg:grid lg:grid-cols-3 lg:bg-[rgba(44, 44, 44, 0.5)] hidden">
         <div class="flex col-start-1 gap-4 ml-32">
-            <i class="fa fa-linkedin"></i>
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-google-plus"></i>
+            <a href="https://linkedin.com"><i class="fa fa-linkedin hover:text-green-600"></i></a>
+            <a href="https://facebook.com"><i class="fa fa-facebook hover:text-green-600"></i></a>
+            <a href="https://google.com"><i class="fa fa-google-plus hover:text-green-600"></i></a>
         </div>
 
         <div class="flex col-end-4 gap-4 ml-5">
@@ -51,7 +51,7 @@
 
                 <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
                     data-dropdown-trigger="hover"
-                    class="text-white rounded-lg text-sm text-center inline-flex items-center"
+                    class="text-white hover:text-green-600 rounded-lg text-sm text-center inline-flex items-center"
                     type="button">Blog<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -73,7 +73,7 @@
             <a class="mt-[30px] hover:text-green-600">
                 <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
                     data-dropdown-trigger="hover"
-                    class="text-white rounded-lg text-sm text-center inline-flex items-center"
+                    class="text-white hover:text-green-600 rounded-lg text-sm text-center inline-flex items-center"
                     type="button">Pages<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -82,13 +82,14 @@
                 <div id="dropdownDelay" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
                         <li>
-                            <a href="#"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Elements</a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
-                                out</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Portfolio</a>
                         </li>
+                        <!-- <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Portfolio Details</a>
+                        </li> -->
                     </ul>
                 </div>
 
@@ -118,12 +119,12 @@
     <img class="col-start-2" src="./content/img/1.webp" alt="">
     </div>
 
-    <div class=" mx-auto lg:hidden mt-3 w-[70%] h-[50px] bg-nav">
+    <div class=" mx-auto lg:hidden mt-3 w-[70%] h-[50px] bg-[#4c4c4c]">
         <button
             class=" text-white bg-gray-900 h-[80%] font-medium font-bold text-lg px-4 float-right m-1 text-center  inline-flex items-center"
             type="button" data-dropdown-toggle="dropdown">MENU<i class="fa fa-bars"></i></button>
     
-        <div class="hidden bg-nav text-white z-50 list-none divide-y divide-gray-100 w-[70%] shadow my-4 mx-auto" id="dropdown">
+        <div class="hidden bg-[#4c4c4c] text-white z-50 list-none divide-y divide-gray-100 w-[70%] shadow my-4 mx-auto" id="dropdown">
            
             <ul class="py-1 w-[100%] mx-auto" aria-labelledby="dropdown">
                 <li>
@@ -156,7 +157,7 @@
             <p class="text-xl text-gray-300 m-0 p-0">Nam libero tempore, cum soluta nobis est eligendi optio <br>
                 cumque nihil impedit quo minus.</p><br>
             <button class="bg-green-500 text-white w-[150px] h-[50px] mx-3 rounded-lg mt-1">Our Services</button>
-            <button class="border text-white w-[200px] h-[50px] rounded-lg mt-1"><i class="fa fa-play p-1"></i>See How It Work</button>
+            <button class="border text-white w-[200px] h-[50px] rounded-lg mt-1 hover:bg-green-600 hover:border-green-600"><i class="fa fa-play p-1"></i>See How It Work</button>
        </div>
 
     </div>
@@ -225,7 +226,7 @@
 
 
     <div class="">
-        <div class="stats bg-blue-50 w-[100%] py-[80px] px-16 flex items-center justify-center lg:text-6xl text-4xl h-[260px]">
+        <div class="stats bg-[#F5FBFF] w-[100%] py-[80px] gap-20 grid grid-cols-3 flex-row lg:px-[250px] sm:px-[100px] px-[30px] lg:text-6xl text-4xl h-[260px]">
             <div>
                 <div class="flex"><span class="sta" data-max="520">0</span><span>+</span></div>
                 <p class="p-5 pt-8 text-gray-400 text-lg pr-5">Total Projects</p>
@@ -250,9 +251,9 @@
 
 
     <div class="mt-12">
-        <div class="flex justify-center items-center gap-8 mx-auto">
+        <div class="flex justify-center items-center mx-auto gap-8 flex-col flex md:flex-row">
 
-           <div class="container w-[350px] h-auto">
+           <div class="container w-[350px] h-auto  ">
             <img class="flex flex-col " src="./content/img/8.webp" alt="">
             <div class="overlay1  overlayLeft">
                 <div class="text font-bold text-lg tracking-wide">Product Branding <span class="font-normal mx-auto">Branding</span>
@@ -260,7 +261,7 @@
             </div>
            </div>
 
-            <div class="container  w-[350px] h-auto">
+            <div class="container  w-[350px] h-auto  ">
                 <img class="flex flex-col" src="./content/img/9.webp" alt="">
                 <div class="overlay1  overlayLeft">
                     <div class="text font-bold text-lg tracking-wide">Product Branding <span class="font-normal mx-auto">Branding</span>
@@ -268,7 +269,7 @@
                 </div>
             </div>
 
-            <div class="container  w-[350px] h-auto">
+            <div class="container  w-[350px] h-auto flex-col flex">
                 <img class="flex flex-col" src="./content/img/10.webp" alt="">
                 <div class="overlay1  overlayLeft">
                 <div class="text font-bold text-lg tracking-wide">Product Branding <span class="font-normal mx-auto">Branding</span>
@@ -277,8 +278,8 @@
             </div>
         </div>
 
-        <div class="flex justify-center items-center gap-8 mx-auto mt-5">
-            <div class="container  w-[730px] h-auto">
+        <div class="flex justify-center items-center gap-8 mx-auto mt-5 flex-col flex md:flex-row">
+            <div class="container  md:w-[730px] w-[90%] h-auto  flex-col flex">
                 <img class="flex flex-col" src="./content/img/11.webp" alt="">
                 <div class="overlay1  overlayLeft">
                     <div class="text font-bold text-lg tracking-wide">Product Branding <br> <span class="font-normal mx-auto">Branding</span>
@@ -286,8 +287,8 @@
                 </div>
             </div>
            
-            <div class="container  w-[350px] h-auto">
-                <img class="flex flex-col" src="./content/img/10.webp" alt="">
+            <div class="container  w-[350px] h-auto flex-col flex">
+                <img class="flex flex-col" src="./content/img/12.webp" alt="">
                 <div class="overlay1  overlayLeft">
                     <div class="text font-bold text-lg tracking-wide">Product Branding <span class="font-normal mx-auto">Branding</span></div>
                 </div>
@@ -328,9 +329,9 @@
 
      <div class="grid lg:grid-cols-2 grid-cols-1 flex mt-12">
 
-        <div class="swiper mySwiper">
+        <div class="swiper w-[80%] h-[100%] mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide text-center">
                     <h3 class="text-4xl mt-12 text-start">Gives you the best Financial <br>
                         solution for business</h3>
                     <p class="text-lg text-start text-gray-500 font-light mt-5">These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and
@@ -340,7 +341,7 @@
                     <i class="fa-solid fa-chevron-right text-green-600 border border-green-500 rounded-full w-8 h-8 pt-1 mt-12 col-start-2"></i>
                    </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide text-center">
                     <h3 class="text-4xl mt-12 text-start">Gives you the best Financial <br>
                         solution for business</h3>
                     <p class="text-lg text-start text-gray-500 font-light mt-5">These cases are perfectly simple and easy to
@@ -351,7 +352,7 @@
                         <i class="fa-solid fa-chevron-right text-green-600 border border-green-500 rounded-full w-8 h-8 pt-1 mt-12 col-start-2"></i>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide text-center">
                     <h3 class="text-4xl mt-12 text-start">Gives you the best Financial <br>
                         solution for business</h3>
                     <p class="text-lg text-start text-gray-500 font-light mt-5">These cases are perfectly simple and easy to
@@ -376,6 +377,25 @@
         	https://preview.colorlib.com/theme/busicol/img/testmonial/1.png
       -->
 
+      <div class="flex justify-center items-center mt-20 mx-auto gap-5">
+        <div><img class="w-20 h-20"
+                src="https://preview.colorlib.com/theme/busicol/img/testmonial/1.png" />
+            <!-- <p class="testosotto">Guarda i nostri video</p> -->
+        </div>
+        <div><img class="w-16 h-16 opacity-50"
+                src="https://preview.colorlib.com/theme/busicol/img/testmonial/1.png" />
+            <!-- <p class="testosotto">Leggi i nostri Articoli</p> -->
+        </div>
+        <div><img class="w-16 h-16 opacity-50"
+                src="https://preview.colorlib.com/theme/busicol/img/testmonial/1.png" />
+            <!-- <p class="testosotto">Ascolta i nostri Podcast</p> -->
+        </div>
+      </div>
+    <p class="text-center mt-5 underline text-gray-500 text-xl leading-10 tracking-wide">These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled <br>
+        and when nothing prevents our being able.</p>
+        <h4 class="text-center mt-5 texet-lg">Robert Jonson</h4>
+        <p class="text-center text-gray-500 text-sm mt-2"> Business Owner</p>
+
       <div class="text-white text-center bg-green-600 w-screen h-[400px] mt-12 flex justify-center items-center">
         <div>
             <p class="text-4xl">Do you Have any Project?</p>
@@ -398,34 +418,34 @@
         <div class="lg:col-span-1 mt-5">
             <ul class="text-gray-400 text-sm leading-10">
                 <li class="font-bold text-lg mb-8 text-white">Services</li>
-                <li>Design</li>
-                <li>Development</li>
-                <li>Marketing</li>
-                <li>Consulting</li>
-                <li>Finance</li>
+                <li class="hover:text-gray-500">Design</li>
+                <li class="hover:text-gray-500">Development</li>
+                <li class="hover:text-gray-500">Marketing</li>
+                <li class="hover:text-gray-500">Consulting</li>
+                <li class="hover:text-gray-500">Finance</li>
             </ul>
         </div>
         <div class="lg:col-span-1 mt-5">
             <ul class="text-gray-400 text-sm leading-10">
                 <li class="font-bold text-lg mb-8 text-white">Useful Links</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact</li>
-                <li>Free quote</li>
+                <li class="hover:text-gray-500">About</li>
+                <li class="hover:text-gray-500">Blog</li>
+                <li class="hover:text-gray-500">Contact</li>
+                <li class="hover:text-gray-500">Free quote</li>
             </ul>
         </div>
         <div class="lg:col-span-1 mt-5">
             <ul class="text-gray-400 text-sm leading-10">
                 <li class="font-bold text-lg mb-8 text-white">Address</li>
-                <li>200, D-block, Green lane USA</li>
-                <li>+10 367 467 8934</li>
-                <li>docmed@contact.com</li>
+                <li class="hover:text-gray-500">200, D-block, Green lane USA</li>
+                <li class="hover:text-gray-500">+10 367 467 8934</li>
+                <li class="hover:text-gray-500">docmed@contact.com</li>
             </ul>
         </div>
       </div>
 
       <div class="bg-[#1F1F1F] w-screen">
-        <p class="text-gray-400 p-8 text-center text-sm hidden md:block">Copyright ©2023 All rights reserved | This template is made with by <span class="text-green-600">Colorlib</span></p>
+        <p class="text-gray-400 p-8 text-center text-sm hidden md:block">Copyright ©2023 All rights reserved | This template is made with by ♡ <span class="text-green-600">Colorlib</span></p>
       </div>
     
     <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
