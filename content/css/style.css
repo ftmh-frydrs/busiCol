@@ -1,0 +1,177 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-img {
+  width: 100%;
+  height: auto;
+}
+
+.bg-img::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/2.png');
+  background-size: cover;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.z::before {
+  z-index: -1;
+}
+
+.bg-header{
+      background: rgba(44, 44, 44, 0.5);
+    }
+.bg-nav{
+  background: #4c4c4c;
+}
+
+
+    /* 
+.ti-search:before {
+    content: "\e610";
+} */
+/* 
+ @font-face {
+		font-family: "Flaticon";
+		src: url("../fonts/Flaticon.eot");
+		src: url("../fonts/Flaticon.eot");
+		src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/Flaticon.woff2") format("woff2"),
+			 url("../fonts/Flaticon.woff") format("woff"),
+			 url("../fonts/Flaticon.ttf") format("truetype"),
+			 url("../fonts/Flaticon.svg#Flaticon") format("svg");
+		font-weight: normal;
+		font-style: normal;
+	  } */
+
+
+    
+.container {
+    position: relative;
+    
+    display: inline-block;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+}
+.overlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: #ff946bbd;
+}
+.overlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-color: #008cba;
+}
+.container:hover .overlay,.container:hover .overlayFade {
+    opacity: 1;
+}
+
+.overlayBottom{
+    width: 100%;
+    height: 0;
+    bottom:0;
+    left:0;
+    background-color:#28AE60;
+}
+.container:hover .overlayBottom {
+    height: 100%;
+}
+.overlayCross{
+    width: 0%;
+    height: 0;
+    top:0;
+    left:0;
+    background-color: #e47a52;
+}
+.container:hover .overlayCross {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+}
+
+.overlay1 {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-color: rgba(40, 174, 96, 0.7);
+}
+.container:hover .overlay1,.container:hover .overlayFade {
+    opacity: .9;
+}
+
+.overlayLeft{
+    height: 100%;
+    width:0;
+    top:0;
+    left:0;
+    background-color: rgba(40, 174, 96, 0.7);
+}
+.container:hover .overlayLeft {
+    width: 100%;
+}
+
+
+.container:hover .overlayCross {
+    height: 100%;
+    /* width: 100%; */
+}
+
+.hover-img:hover {
+    background-color: #28AE60;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.swiper {
+      width: 80%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+

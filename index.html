@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./content/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"    
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="    
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/themify-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+
+    
+</head>
+
+<body>
+
+    <div class="bg-img bg-no-repeat bg-cover bg-center">
+       <div class=" text-white p-3 lg:grid lg:grid-cols-3 lg:bg-header hidden">
+        <div class="flex col-start-1 gap-4 ml-32">
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-google-plus"></i>
+        </div>
+
+        <div class="flex col-end-4 gap-4 ml-5">
+            <i class="fa fa-envelope text-green-500"></i>
+            <a class="text-xs">info@docmed.com</a>
+            <i class="fa fa-phone text-green-500"></i>
+            <a class="text-xs ">1601-609 6780</a>
+        </div>
+       </div>
+
+       <div class="lg:flex lg:border-b pb-5 w-[85%] lg:grid lg:grid-cols-4 lg:mx-auto hidden">
+
+        <div>
+            <img class=" pt-5" src="./content/img/1.webp" alt="">
+        </div>
+
+        <div class="flex text-white z-50 gap-x-8">
+            <a class="pt-8 text-sm hover:text-green-600">Home</a>
+            <a class="pt-8 text-sm hover:text-green-600">About</a>
+            <a class="pt-8 text-sm hover:text-green-600">Services</a>
+            <a class="mt-[30px] hover:text-green-600">
+
+                <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
+                    data-dropdown-trigger="hover"
+                    class="text-white rounded-lg text-sm text-center inline-flex items-center"
+                    type="button">Blog<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg></button>
+                <!-- Dropdown menu -->
+                <div id="dropdownDelay" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                                out</a>
+                        </li>
+                    </ul>
+                </div>
+            </a>
+            <a class="mt-[30px] hover:text-green-600">
+                <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
+                    data-dropdown-trigger="hover"
+                    class="text-white rounded-lg text-sm text-center inline-flex items-center"
+                    type="button">Pages<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg></button>
+                <!-- Dropdown menu -->
+                <div id="dropdownDelay" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                                out</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </a>
+            <a class="pt-8 text-sm hover:text-green-600">Contact</a>
+        </div>
+
+        <div class="flex mt-5 col-end-5">
+            <svg class="w-5 h-5 mt-3 ml-8 text-white svg-icon search-icon" aria-labelledby="title desc" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7">
+                <title id="title">Search Icon</title>
+                <desc id="desc">A magnifying glass icon.</desc>
+                <g class="search-path" fill="none" stroke="#ffffff">
+                    <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+                    <circle cx="8" cy="8" r="7" />
+                </g>
+            </svg>
+            <button class=" w-[150px] h-[50px] bg-green-600 rounded-lg float-right text-white texet-xs mx-auto">Get
+                Quote</button>
+        </div>
+       </div>
+
+
+    <!-- component -->
+    <!-- This is an example component -->
+    <div class=" pt-5 lg:hidden grid grid-cols-7">
+    <img class="col-start-2" src="./content/img/1.webp" alt="">
+    </div>
+
+    <div class=" mx-auto lg:hidden mt-3 w-[70%] h-[50px] bg-nav">
+        <button
+            class=" text-white bg-gray-900 h-[80%] font-medium font-bold text-lg px-4 float-right text-center  inline-flex items-center"
+            type="button" data-dropdown-toggle="dropdown">MENU<i class="fa fa-bars"></i></button>
+    
+        <div class="hidden bg-nav text-white z-50 list-none divide-y divide-gray-100  w-[70%] shadow my-4 mx-auto" id="dropdown">
+           
+            <ul class="py-1 w-[100%] mx-auto" aria-labelledby="dropdown">
+                <li>
+                    <a href="#"
+                        class="text-sm hover:bg-gray-100 text-white hover:text-black block px-4 py-2 w-[90%] rounded-lg mx-5 ">home</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-sm hover:bg-gray-100 text-white hover:text-black block px-4 py-2 w-[90%] rounded-lg mx-5 ">About</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm hover:bg-gray-100 text-white hover:text-black block px-4 py-2 w-[90%] rounded-lg mx-5 ">Services</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm hover:bg-gray-100 text-white hover:text-black block px-4 py-2 w-[90%] rounded-lg mx-5 ">blog</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm hover:bg-gray-100 text-white hover:text-black block px-4 py-2 w-[90%] rounded-lg mx-5 ">pages</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm hover:bg-gray-100 text-white hover:text-black block px-4 py-2 w-[90%] rounded-lg mx-5 ">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+       <div class="tracking-widest gap-8 ml-[100px] mt-[150px]">
+            <p class=" text-bold text-6xl text-white leading-tight"> Grow Big with <br>
+                Musicol Business </p>
+            <p class="text-xl text-gray-300 m-0 p-0">Nam libero tempore, cum soluta nobis est eligendi optio <br>
+                cumque nihil impedit quo minus.</p><br>
+            <button class="bg-green-500 text-white w-[150px] h-[50px] mx-3 rounded-lg">Our Services</button>
+            <button class="border text-white w-[200px] h-[50px] rounded-lg"><i class="fa fa-play p-1"></i>See How It Work</button>
+       </div>
+
+    </div>
+    
+    <p class="lg:mt-[350px] mt-[150px] text-center font-bold text-6xl">Explore Our Solutions</p>
+    <!-- <div class="flex justify-center items-center"></div> -->
+<div class="grid md:grid-cols-3 grid-cols-1 gap-8 mt-[50px] lg:mx-24 mx-12">
+        <!-- <img src="./content/img/3.png" alt="">
+        <img src="./content/img/4.png" alt="">
+        <img src="./content/img/5.png" alt=""> -->
+        <div class="before:bg-[url('./content/img/3.png')] bg-[url('./content/img/3.png')] items-center justify-center mx-auto flex flex-col   container md:w-[100%] w-[80%] before:w-[100%] h-[280px] bg-no-repeat bg-cover bg-center before:bg-cover before:bg-center before:brightness-75 before:absolute md:before:w-[100%] before:h-[280px] before:content-[''] before:bg-cover z z-50">
+            <img src="https://preview.colorlib.com/theme/busicol/img/svg_icon/legal-paper.svg " class="mx-auto" alt="">
+            <p class="text-white text-center pt-3 font-extrabold text-xl">Invoicing</p>
+            <div class="overlay overlayBottom">
+                <div class="text"><p class="text-center text-2xl mb-5 font-bold">Invoicing</p>
+                <p class="text-center text-sm">These cases are perfectly simple and easy to distinguish. In a free hour power.</p></div>
+            </div>
+        </div>
+        <div class="before:bg-[url('./content/img/4.png')] bg-[url('./content/img/4.png')] items-center justify-center mx-auto flex flex-col container md:w-[100%] w-[80%] before:w-[100%] h-[280px] bg-no-repeat bg-cover bg-center before:bg-cover before:bg-center before:brightness-75 before:absolute md:before:w-[100%] before:h-[280px] before:content-[''] before:bg-cover z z-50">
+            <img src="https://preview.colorlib.com/theme/busicol/img/svg_icon/case.svg " class="mx-auto" alt="">
+            <p class="text-white text-center pt-3 font-extrabold text-xl">Business Growth</p>
+            <div class="overlay overlayBottom">
+                <div class="text"><p class="text-center text-2xl mb-5 font-bold">Business Growth</p>
+               <p class="text-center text-sm">These cases are perfectly simple and easy to distinguish. In a free hour power.</p></div>
+            </div>
+        </div>
+        <div class="before:bg-[url('./content/img/5.png')] bg-[url('./content/img/5.png')] items-center justify-center mx-auto flex flex-col container md:w-[100%] w-[80%] before:w-[100%] h-[280px] bg-no-repeat bg-cover bg-center before:bg-cover before:bg-center before:brightness-75 before:absolute md:before:w-[100%] before:h-[280px] before:content-[''] before:bg-cover z z-50">
+            <img src="https://preview.colorlib.com/theme/busicol/img/svg_icon/survey.svg " class="mx-auto" alt="">
+            <p class="text-white text-center pt-3 font-extrabold text-xl">Problem Solving</p>
+            <div class="overlay overlayBottom">
+                <div class="text"><p class="text-center text-2xl mb-5 font-bold">Problem Solving</p>
+                <p class="text-center text-sm">These cases are perfectly simple and easy to distinguish. In a free hour power.</p></div>
+            </div>
+        </div>
+</div>
+
+<!-- 
+    https://preview.colorlib.com/theme/busicol/img/svg_icon/legal-paper.svg
+    https://preview.colorlib.com/theme/busicol/img/svg_icon/case.svg
+    https://preview.colorlib.com/theme/busicol/img/svg_icon/survey.svg
+ -->
+
+    
+  <div class="lg:flex block mt-[150px] lg:grid lg:grid-cols-2 grid grid-cols-1">
+    <img class="w-[100%]" src="./content/img/6.png" alt="">
+       <div class="pl-5 pr-5 w-[80%]">
+        <p class="text-4xl max-lg:pt-8">The Largest Business Expert</p>
+        <p class="mt-12 text-lg text-gray-500 font-light">These cases are perfectly simple and easy to distinguish. In a free hour,
+            when our power of choice is untrammelled and when nothing prevents
+            our being able to do what we like best.</p>
+       <div class="mt-5 max-lg:mt-8 text-gray-500 font-normal text-lg">
+       <div class="flex">
+        <img class="mr-3" src="https://preview.colorlib.com/theme/busicol/img/svg_icon/check.svg" alt="">
+        <p>Apartments frequently or
+        motionless.</p></div>
+       <div class="flex">
+        <img class="mr-3" src="https://preview.colorlib.com/theme/busicol/img/svg_icon/check.svg" alt="">
+        <p>aute irure dolor in reprehenderit in voluptate.</p></div>
+       <div class="flex">
+        <img class="mr-3" src="https://preview.colorlib.com/theme/busicol/img/svg_icon/check.svg" alt="">
+        <p>Voluptatem quia voluptas sit aspernatur.</p></div>
+       </div>
+        <button class="bg-green-600 max-lg:mt-20 mt-8 mb-2 text-white rounded-lg w-[150px] h-[40px]">About Us</button>
+       </div>
+  </div>
+
+
+    <div class="">
+        <div class="stats bg-blue-50 w-[100%] py-[80px] flex items-center justify-center lg:text-6xl text-4xl h-[260px]">
+            <div>
+                <div class="flex"><span class="sta" data-max="520">0</span><span>+</span></div>
+                <p class="p-5 pt-8 text-gray-400 text-lg pr-5">Total Projects</p>
+            </div>
+           <div>
+            <span class="sta  ml-5" data-max="244">0</span>
+            <p class=" lg:pt-8 p-5 text-gray-400 text-lg">On Going Projects</p>
+           </div>
+           <div>
+            <div class="flex"><span class="sta" data-max="95">0</span><span>%</span></div>
+            <p class="p-5 pt-8 text-gray-400 text-lg ">Job Success</p>
+           </div>
+        </div>
+    </div>
+
+
+    <div class="mt-[100px]">
+        <p class="text-center text-4xl">Our Recent Works</p>
+        <p class="text-center text-gray-500 text-lg mt-12">These cases are perfectly simple and easy to distinguish. In a free <br>
+        hour, when our power of choice is untrammelled.</p>
+    </div>
+
+
+    <div class="mt-12">
+        <div class="flex justify-center items-center gap-8 mx-auto">
+
+           <div class="container w-[350px] h-auto">
+            <img class="flex flex-col " src="./content/img/8.webp" alt="">
+            <div class="overlay1  overlayLeft">
+                <div class="text font-bold text-lg tracking-wide">Product Branding <span class="font-normal mx-auto">Branding</span>
+                </div>
+            </div>
+           </div>
+
+            <div class="container  w-[350px] h-auto">
+                <img class="flex flex-col" src="./content/img/9.webp" alt="">
+                <div class="overlay1  overlayLeft">
+                    <div class="text font-bold text-lg tracking-wide">Product Branding <span class="font-normal mx-auto">Branding</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container  w-[350px] h-auto">
+                <img class="flex flex-col" src="./content/img/10.webp" alt="">
+                <div class="overlay1  overlayLeft">
+                <div class="text font-bold text-lg tracking-wide">Product Branding <span class="font-normal mx-auto">Branding</span>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center gap-8 mx-auto mt-5">
+            <div class="container  w-[730px] h-auto">
+                <img class="flex flex-col" src="./content/img/11.webp" alt="">
+                <div class="overlay1  overlayLeft">
+                    <div class="text font-bold text-lg tracking-wide">Product Branding <br> <span class="font-normal mx-auto">Branding</span>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="container  w-[350px] h-auto">
+                <img class="flex flex-col" src="./content/img/10.webp" alt="">
+                <div class="overlay1  overlayLeft">
+                    <div class="text font-bold text-lg tracking-wide">Product Branding <span class="font-normal mx-auto">Branding</span></div>
+                </div>
+            </div>
+        </div>
+            <div class="flex justify-center items-center mt-12">
+                <button class=" border border-green-600 text-green-600 flex flex-col w-44 h-12 pl-12 pt-3 rounded-lg hover:bg-green-600 hover:text-white">More Work</button>
+            </div>
+    </div>
+
+
+    <div class="bg-[url('./content/img/7.png')] before:bg-[#2C2C2C] grid lg:grid-cols-4 flex justify-center items-center gap-8 lg:pl-[250px] mt-[100px] bg-no-repeat bg-cover before:bg-cover bg-center before:absolute before:opacity-[0.6] relative before:content-[''] before:bg-cover z z-50 before:w-screen lg:before:h-[600px] w-screen  lg:h-[600px] before:h-[800px] h-[800px]">
+
+        <div class="border  lg:h-[50%] text-white text-center p-5 flex-col justify-center items-center hover-img">
+            <img class="mx-auto mt-12" src="https://preview.colorlib.com/theme/busicol/img/svg_icon/controls.svg" alt="">
+            <p class="font-bold mt-5">Unlimited Control</p>
+            <p>These cases are perfectly simple and easy to</p>
+        </div>
+        <div class="border  lg:h-[50%] text-white text-center p-5 flex-col justify-center items-center hover-img ">
+            <img class="mx-auto mt-12" src="https://preview.colorlib.com/theme/busicol/img/svg_icon/bar-chart.svg" alt="">
+            <p class="font-bold mt-5">Unlimited Control</p>
+            <p>These cases are perfectly simple and easy to</p>
+        </div>
+        <div class="border lg:h-[50%] text-white text-center p-5 flex-col justify-center items-center hover-img">
+            <img class="mx-auto mt-12" src="https://preview.colorlib.com/theme/busicol/img/svg_icon/puzzle.svg" alt="">
+            <p class="font-bold mt-5">Unlimited Control</p>
+            <p>These cases are perfectly simple and easy to</p>
+        </div>
+
+    </div>
+
+    <!-- 
+        	https://preview.colorlib.com/theme/busicol/img/svg_icon/controls.svg
+            https://preview.colorlib.com/theme/busicol/img/svg_icon/bar-chart.svg
+            https://preview.colorlib.com/theme/busicol/img/svg_icon/puzzle.svg
+     -->
+
+
+     <div class="grid lg:grid-cols-2 grid-cols-1 flex mt-12">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h3 class="text-4xl mt-12 text-start">Gives you the best Financial <br>
+                        solution for business</h3>
+                    <p class="text-lg text-start text-gray-500 font-light mt-5">These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and
+                    when nothing prevents our being able to do what we like best.</p>
+                   <div class="mx-auto ml-5 grid grid-cols-10 mb-5">
+                    <i class="fa-solid fa-chevron-left text-green-600 border border-green-500 rounded-full w-8 h-8 pt-1 mt-12 col-start-1"></i>
+                    <i class="fa-solid fa-chevron-right text-green-600 border border-green-500 rounded-full w-8 h-8 pt-1 mt-12 col-start-2"></i>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                    <h3 class="text-4xl mt-12 text-start">Gives you the best Financial <br>
+                        solution for business</h3>
+                    <p class="text-lg text-start text-gray-500 font-light mt-5">These cases are perfectly simple and easy to
+                        distinguish. In a free hour, when our power of choice is untrammelled and
+                        when nothing prevents our being able to do what we like best.</p>
+                    <div class="mx-auto ml-5 grid grid-cols-10 mb-5">
+                        <i class="fa-solid fa-chevron-left text-green-600 border border-green-500 rounded-full w-8 h-8 pt-1 mt-12 col-start-1"></i>
+                        <i class="fa-solid fa-chevron-right text-green-600 border border-green-500 rounded-full w-8 h-8 pt-1 mt-12 col-start-2"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <h3 class="text-4xl mt-12 text-start">Gives you the best Financial <br>
+                        solution for business</h3>
+                    <p class="text-lg text-start text-gray-500 font-light mt-5">These cases are perfectly simple and easy to
+                        distinguish. In a free hour, when our power of choice is untrammelled and
+                        when nothing prevents our being able to do what we like best.</p>
+                    <div class="mx-auto ml-5 grid grid-cols-10 mb-5">
+                        <i class="fa-solid fa-chevron-left text-green-600 border border-green-500 rounded-full w-8 h-8 pt-1 mt-12 col-start-1"></i>
+                        <i class="fa-solid fa-chevron-right text-green-600 border border-green-500 rounded-full w-8 h-8 pt-1 mt-12 col-start-2"></i>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="mx-auto">
+            <img class="w-[100%]" src="./content/img/13.webp" alt="">
+        </div>
+     </div>
+
+
+     <!-- 
+        	https://preview.colorlib.com/theme/busicol/img/testmonial/1.png
+      -->
+
+      <div class="text-white text-center bg-green-600 w-screen h-[400px] mt-12 flex justify-center items-center">
+        <div>
+            <p class="text-4xl">Do you Have any Project?</p>
+            <p class="mt-5 text-gray-200"> Nam libero tempore, cum soluta nobis est eligendi optio <br>
+                cumque nihil impedit quo minus.</p>
+                <button class="mx-auto border mt-8 w-40 h-12 rounded-lg hover:bg-white hover:text-green-600">Contact Us</button>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-6 p-12 pb-40 pt-24 md:grid-cols-2 grid-cols-1 bg-[#2C2C2C] text-white flex justify-center items-center mx-auto w-screen h-auto">
+        <div class="lg:col-span-2 lg:mx-12 mt-5">
+            <img src="./content/img/14.webp" alt="">
+            <p class="mt-12">Firmament morning sixth subdue darkness <br> creeping gathered divide.</p>
+            <div class="flex gap-8 mt-8">
+                <i class="fa fa-facebook text-xl rounded-full  bg-[#565656] w-12 h-12 text-center flex justify-center items-center hover:bg-green-600"></i>
+                <i class="fa-brands fa-twitter text-xl rounded-full  bg-[#565656] w-12 h-12 text-center flex justify-center items-center hover:bg-green-600"></i>
+                <i class="fa-brands fa-instagram text-xl rounded-full  bg-[#565656] w-12 h-12 text-center flex justify-center items-center hover:bg-green-600"></i>
+            </div>
+        </div>
+        <div class="lg:col-span-1 mt-5">
+            <ul class="text-gray-400 text-sm leading-10">
+                <li class="font-bold text-lg mb-8 text-white">Services</li>
+                <li>Design</li>
+                <li>Development</li>
+                <li>Marketing</li>
+                <li>Consulting</li>
+                <li>Finance</li>
+            </ul>
+        </div>
+        <div class="lg:col-span-1 mt-5">
+            <ul class="text-gray-400 text-sm leading-10">
+                <li class="font-bold text-lg mb-8 text-white">Useful Links</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Contact</li>
+                <li>Free quote</li>
+            </ul>
+        </div>
+        <div class="lg:col-span-1 mt-5">
+            <ul class="text-gray-400 text-sm leading-10">
+                <li class="font-bold text-lg mb-8 text-white">Address</li>
+                <li>200, D-block, Green lane USA</li>
+                <li>+10 367 467 8934</li>
+                <li>docmed@contact.com</li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="bg-[#1F1F1F] w-screen">
+        <p class="text-gray-400 p-8 text-center text-sm hidden md:block">Copyright ©2023 All rights reserved | This template is made with by <span class="text-green-600">Colorlib</span></p>
+      </div>
+    
+    <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./content/js/script.js"></script>
+</body>
+</html>
